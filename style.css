@@ -2324,7 +2324,7 @@ body.scrolled-down {
 /* Фото человека на фоне — светлое, размер как есть */
 .process-section {
     position: relative;
-    background: url('/images/pruf/hero-bg2.png') center center / contain no-repeat;
+    background: url('/hero-bg2.png') center center / contain no-repeat;
     background-size: contain;
     min-height: 500px; /* высота на десктопе — подгони под своё фото */
     background-position: left; /* фиксируем слева */
@@ -2437,3 +2437,4 @@ body.scrolled-down {
     }
 
 }
+

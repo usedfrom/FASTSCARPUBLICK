@@ -10,9 +10,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/pruf/favicon.png">
+ <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){
+            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=107536660', 'ym');
+        ym(107536660, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/107536660" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 </head>
 <body>
-    <!-- Шапка сайта (такая же как на главной) -->
+    <!-- Шапка сайта -->
     <header class="header">
         <div class="container">
             <div class="header-content">
@@ -67,7 +79,7 @@
                     <h2>Наша история</h2>
                     <p>Компания <strong>FASTS-CAR</strong> была основана в 2018 году во Владивостоке с целью предоставления российским автолюбителям доступа к качественным автомобилям из Азии по доступным ценам без посредников.</p>
                     <p>Начав с поставок нескольких автомобилей из Японии для знакомых, сегодня мы выросли в компанию, которая ежегодно доставляет более 200 автомобилей в разные регионы России.</p>
-                    <p>Наше ключевое преимущество - работа напрямую с аукционами Японии, Кореи и Китая, что позволяет предлагать цены на 15-20% ниже рыночных.</p>
+                    <p>Наше ключевое преимущество — работа напрямую с аукционами Японии, Кореи и Китая, что позволяет предлагать цены на 15-20% ниже рыночных.</p>
                     
                     <div class="about-mission">
                         <h3>Наша миссия</h3>
@@ -149,14 +161,14 @@
             <p class="section-subtitle">Профессионалы с многолетним опытом работы на рынке автомобилей из Азии</p>
             
             <div class="team-grid">
+
+                <!-- Сергей -->
                 <div class="team-member">
                     <div class="member-photo">
-                        <div class="photo-placeholder">
-                            <i class="fas fa-user"></i>
-                        </div>
+                        <img src="public/images/sergey.jpg" alt="Сергей, Владивосток" class="member-photo-img">
                     </div>
                     <div class="member-info">
-                        <h3>Сергей</h3>
+                        <h3>Сергей, Владивосток</h3>
                         <p class="member-position">Основатель и главный специалист</p>
                         <p class="member-description">Более 7 лет опыта работы с аукционами Японии и Кореи. Лично контролирует каждый этап сделки, от подбора автомобиля до его доставки клиенту.</p>
                         <div class="member-contacts">
@@ -169,15 +181,14 @@
                         </div>
                     </div>
                 </div>
-                
+
+                <!-- Андрей Владивосток -->
                 <div class="team-member">
                     <div class="member-photo">
-                        <div class="photo-placeholder">
-                            <i class="fas fa-user-tie"></i>
-                        </div>
+                        <img src="public/images/andrey-vlad.jpg" alt="Андрей, Владивосток" class="member-photo-img">
                     </div>
                     <div class="member-info">
-                        <h3>Александр</h3>
+                        <h3>Андрей, Владивосток</h3>
                         <p class="member-position">Специалист по аукционам Японии</p>
                         <p class="member-description">Свободно владеет японским языком. Отлично разбирается в особенностях японских автомобилей и тонкостях местных аукционов.</p>
                         <div class="member-contacts">
@@ -187,7 +198,8 @@
                         </div>
                     </div>
                 </div>
-                
+
+                <!-- Андрей Хабаровск -->
                 <div class="team-member">
                     <div class="member-photo">
                         <div class="photo-placeholder">
@@ -195,7 +207,7 @@
                         </div>
                     </div>
                     <div class="member-info">
-                        <h3>Дмитрий</h3>
+                        <h3>Андрей, Хабаровск</h3>
                         <p class="member-position">Специалист по таможенному оформлению</p>
                         <p class="member-description">Опыт работы в таможенной сфере более 10 лет. Знает все нюансы растаможки автомобилей и оформления необходимых документов.</p>
                         <div class="member-contacts">
@@ -205,6 +217,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -239,93 +252,284 @@
     </section>
 
     <!-- Отзывы -->
-    <section class="section testimonials-section">
-        <div class="container">
-            <h2 class="section-title">Отзывы клиентов</h2>
-            <p class="section-subtitle">Что говорят о нас наши клиенты</p>
-            
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-header">
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="author-info">
-                                <h4>Антон, Москва</h4>
-                                <span class="author-car">Toyota Land Cruiser 200, 2018</span>
-                            </div>
-                        </div>
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+<section class="section testimonials-section">
+    <div class="container">
+        <h2 class="section-title">Отзывы клиентов</h2>
+        <p class="section-subtitle">Что говорят о нас наши клиенты</p>
+        
+        <div class="testimonials-grid">
+
+            <div class="testimonial-card">
+                <div class="testimonial-car-image">
+                    <img src="public/images/toyota-corolla-cross.jpg" alt="Toyota Corolla Cross">
+                </div>
+                <div class="testimonial-header">
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user"></i></div>
+                        <div class="author-info">
+                            <h4>Максим, Новосибирск</h4>
+                            <span class="author-car">Toyota Corolla Cross, 2023</span>
                         </div>
                     </div>
-                    <div class="testimonial-content">
-                        <p>"Заказывал Land Cruiser через FASTS-CAR. Сергей нашел отличный вариант на аукционе в Японии. Машина пришла в идеальном состоянии, как на фото. Все документы оформили быстро. Отдельное спасибо за постоянную связь и отчеты в Telegram!"</p>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
-                    <div class="testimonial-date">Май 2023</div>
+                </div>
+                <div class="testimonial-content">
+                    <p>"Брал Corolla Cross через FASTS-CAR. Машина пришла с пробегом 20 000 км, в идеале. Сергей подобрал комплектацию Modelista — выглядит просто шикарно. Оценка аукциона 4.5B, всё совпало с реальностью. Очень доволен покупкой!"</p>
                 </div>
                 
-                <div class="testimonial-card">
-                    <div class="testimonial-header">
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="author-info">
-                                <h4>Елена, Новосибирск</h4>
-                                <span class="author-car">Honda Stepwgn, 2020</span>
-                            </div>
-                        </div>
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-car-image">
+                    <img src="public/images/toyota-wish.jpg" alt="Toyota Wish">
+                </div>
+                <div class="testimonial-header">
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user"></i></div>
+                        <div class="author-info">
+                            <h4>Андрей, Хабаровск</h4>
+                            <span class="author-car">Toyota Wish, 2012</span>
                         </div>
                     </div>
-                    <div class="testimonial-content">
-                        <p>"Искала минивэн для большой семьи. FASTS-CAR предложили несколько вариантов из Японии. Выбрали Honda Stepwgn - машина просто замечательная! Сергей постоянно был на связи, присылал фото с аукциона, потом с погрузки. Доставили в срок, все честно!"</p>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                     </div>
-                    <div class="testimonial-date">Февраль 2024</div>
+                </div>
+                <div class="testimonial-content">
+                    <p>"Искал вместительный минивэн для семьи с тремя детьми. Ребята нашли Wish с пробегом 133 000 км за очень адекватные деньги. Машина в отличном состоянии, никаких сюрпризов после приезда. Рекомендую!"</p>
+                </div>
+               
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-car-image">
+                    <img src="public/images/honda-fit.jpg" alt="Honda Fit">
+                </div>
+                <div class="testimonial-header">
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user"></i></div>
+                        <div class="author-info">
+                            <h4>Ольга, Партизанск</h4>
+                            <span class="author-car">Honda Fit, 2018</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    <p>"Первая машина из Японии — боялась, но Сергей всё объяснил по шагам. Honda Fit приехала точно как на фото с аукциона. Расход топлива минимальный, в городе просто идеал. Спасибо FASTS-CAR за честную работу!"</p>
+                </div>
+              
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-car-image">
+                    <img src="public/images/mercedes-benz-b-class.jpg" alt="Mercedes-Benz B-Class">
+                </div>
+                <div class="testimonial-header">
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user"></i></div>
+                        <div class="author-info">
+                            <h4>Виктор, Владивосток</h4>
+                            <span class="author-car">Mercedes-Benz B-Class, 2017</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    <p>"Хотел немецкое качество за разумные деньги — нашли B180 из Японии с полным пакетом безопасности Radar Safety. Пробег 69 000 км, состояние отличное. Никогда не думал, что Mercedes можно купить так выгодно. Всё честно и прозрачно!"</p>
                 </div>
                 
-                <div class="testimonial-card">
-                    <div class="testimonial-header">
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="author-info">
-                                <h4>Игорь, Екатеринбург</h4>
-                                <span class="author-car">Toyota Crown, 2021</span>
-                            </div>
-                        </div>
-                        <div class="testimonial-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="testimonial-content">
-                        <p>"Хотел Toyota Crown, но в России либо дорого, либо не в том состоянии. Обратился в FASTS-CAR. Нашли отличный вариант в Японии, машина как новая! Цена вышла на 18% ниже, чем аналоги в России. Рекомендую всем, кто хочет качественный авто за разумные деньги."</p>
-                    </div>
-                    <div class="testimonial-date">Декабрь 2023</div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-car-image">
+                    <img src="public/images/toyota-yaris-cross.jpg" alt="Toyota Yaris Cross">
                 </div>
+                <div class="testimonial-header">
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user"></i></div>
+                        <div class="author-info">
+                            <h4>Наталья, Находка</h4>
+                            <span class="author-car">Toyota Yaris Cross, 2021</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    <p>"Yaris Cross в двухцветном кузове Pearl Two-Tone — мечта! Сергей нашёл именно такую комплектацию Z на аукционе TAA Chubu. Пробег всего 25 000 км, оценка 4.5B. Машина пришла как новая, очень довольна!"</p>
+                </div>
+              
             </div>
-            
-            <div class="testimonials-more">
-                <p>Больше отзывов вы можете найти в нашем <a href="https://t.me/fasts_car" target="_blank">Telegram-канале</a> или <a href="https://www.instagram.com/fasts_car" target="_blank">Instagram</a>.</p>
+
+            <div class="testimonial-card">
+                <div class="testimonial-car-image">
+                    <img src="public/images/hyundai-tucson.jpg" alt="Hyundai Tucson">
+                </div>
+                <div class="testimonial-header">
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user"></i></div>
+                        <div class="author-info">
+                            <h4>Дмитрий, Астрахань</h4>
+                            <span class="author-car">Hyundai Tucson, 2019</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    <p>"Привезли Tucson прямо из Кореи — свежий, ухоженный, пробег 40 000 км. Ребята честно предупредили про небольшой окрас крыла, цена была скорректирована. Очень ценю такую честность. Доставили до Астрахани без проблем!"</p>
+                </div>
+              
             </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-car-image">
+                    <img src="public/images/bmw-x1.jpg" alt="BMW X1">
+                </div>
+                <div class="testimonial-header">
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user"></i></div>
+                        <div class="author-info">
+                            <h4>Алексей, Лесозаводск</h4>
+                            <span class="author-car">BMW X1, 2019</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    <p>"BMW X1 M Package с пробегом 25 000 км — просто находка! Оценка 4.5 на аукционе USS JAA, и это видно сразу: машина в идеальном состоянии. За такую цену в России подобного не найти. FASTS-CAR — работают на совесть!"</p>
+                </div>
+               
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-car-image">
+                    <img src="public/images/toyota-corolla-touring.jpg" alt="Toyota Corolla Touring">
+                </div>
+                <div class="testimonial-header">
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user"></i></div>
+                        <div class="author-info">
+                            <h4>Сергей, Владивосток</h4>
+                            <span class="author-car">Toyota Corolla Touring, 2022</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    <p>"Corolla Touring WXB 2022 года — свежая, красивая, с пробегом 47 000 км. Аукционная оценка 4B полностью подтвердилась. Забрал машину во Владивостоке, уже накатал 5 000 км — ни одной проблемы. Отличная компания!"</p>
+                </div>
+             
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-car-image">
+                    <img src="public/images/honda-vezel.jpg" alt="Honda Vezel">
+                </div>
+                <div class="testimonial-header">
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user"></i></div>
+                        <div class="author-info">
+                            <h4>Екатерина, Иркутск</h4>
+                            <span class="author-car">Honda Vezel, 2021</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    <p>"Привезли Vezel из Китая — без единого ДТП, комплектация Luxury, вариатор. Сергей сопроводил всю сделку и лично проверил машину перед отправкой в Иркутск. Очень приятно работать с людьми, которым можно доверять!"</p>
+                </div>
+              
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-car-image">
+                    <img src="public/images/honda-freed.jpg" alt="Honda Freed">
+                </div>
+                <div class="testimonial-header">
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user"></i></div>
+                        <div class="author-info">
+                            <h4>Татьяна, Лесозаводск</h4>
+                            <span class="author-car">Honda Freed, 2011</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    <p>"Freed G Highway Edition — отличный семейный минивэн. Пробег 68 000 км для 2011 года просто смешной! Машина ухоженная, японцы берегут свои авто. Цена порадовала, доставили быстро. Уже посоветовала подруге!"</p>
+                </div>
+              
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-car-image">
+                    <img src="public/images/daihatsu-move.jpg" alt="Daihatsu Move">
+                </div>
+                <div class="testimonial-header">
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user"></i></div>
+                        <div class="author-info">
+                            <h4>Игорь, Хабаровск</h4>
+                            <span class="author-car">Daihatsu Move, 2017</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    <p>"Move Custom X SA III — маленькая, но очень функциональная машинка для города. Брал для жены, она в восторге! Расход копеечный, паркуется везде. Сергей помог выбрать именно эту комплектацию с системой безопасности SA III. Спасибо!"</p>
+                </div>
+              
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-car-image">
+                    <img src="public/images/toyota-roomy.jpg" alt="Toyota Roomy">
+                </div>
+                <div class="testimonial-header">
+                    <div class="testimonial-author">
+                        <div class="author-avatar"><i class="fas fa-user"></i></div>
+                        <div class="author-info">
+                            <h4>Павел, Лесозаводск</h4>
+                            <span class="author-car">Toyota Roomy, 2017</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    <p>"Roomy G-Turbo с обвесом Modelista — выглядит дорого и стильно! Турбо-мотор тянет отлично несмотря на объём. Пробег 87 000 км, но машина как свежая — японцы умеют ухаживать за авто. FASTS-CAR — честные ребята, буду обращаться ещё!"</p>
+                </div>
+               
+            </div>
+
         </div>
-    </section>
+        
+        <div class="testimonials-more">
+            <p>Больше отзывов вы можете найти в нашем <a href="https://t.me/fasts_car" target="_blank">Telegram-канале</a> или <a href="https://www.instagram.com/fasts_car" target="_blank">Instagram</a>.</p>
+        </div>
+    </div>
+</section>
 
     <!-- Блок с призывом к действию -->
     <section class="section cta-section">
@@ -343,18 +547,18 @@
         </div>
     </section>
 
-    <!-- Подвал сайта (такой же как на главной) -->
+    <!-- Подвал сайта -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-col">
-                    <div class="footer-">
-    <img src="images/pruf/logo.png" alt="FASTS-CAR" class="footer-logo-img">
-    <div class="footer-logo-text">
-        <span class="logo-title">FASTS-CAR</span>
-        <span class="logo-subtitle">Авто из Азии напрямую</span>
-    </div>
-</div>
+                    <div class="footer-logo">
+                        <img src="images/pruf/logo.png" alt="FASTS-CAR" class="footer-logo-img">
+                        <div class="footer-logo-text">
+                            <span class="logo-title">FASTS-CAR</span>
+                            <span class="logo-subtitle">Авто из Азии напрямую</span>
+                        </div>
+                    </div>
                     <p class="footer-description">Прямые поставки автомобилей из Японии, Кореи и Китая без посредников. Работаем с 2018 года.</p>
                     <div class="social-links">
                         <a href="https://www.instagram.com/fasts_car" target="_blank" title="Instagram">
@@ -421,34 +625,34 @@
     </footer>
 
     <!-- Модальное окно заказа звонка -->
-   <div class="modal" id="callback-modal">
-    <div class="modal-content">
-        <button class="modal-close">×</button>
-        <h2>Заказать обратный звонок</h2>
-        <p>Оставьте контакты — Сергей свяжется с вами в ближайшее время</p>
+    <div class="modal" id="callback-modal">
+        <div class="modal-content">
+            <button class="modal-close">×</button>
+            <h2>Заказать обратный звонок</h2>
+            <p>Оставьте контакты — Сергей свяжется с вами в ближайшее время</p>
 
-        <form id="callback-form">
-            <div class="form-group">
-                <input type="text" id="callback-name" placeholder="Ваше имя" required>
-            </div>
-            <div class="form-group">
-                <input type="tel" id="callback-phone" placeholder="Ваш телефон" required>
-            </div>
-            <div class="form-group">
-                <textarea id="callback-comment" placeholder="Что вас интересует? (необязательно)" rows="3"></textarea>
-            </div>
+            <form id="callback-form">
+                <div class="form-group">
+                    <input type="text" id="callback-name" placeholder="Ваше имя" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="callback-phone" placeholder="Ваш телефон" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="callback-comment" placeholder="Что вас интересует? (необязательно)" rows="3"></textarea>
+                </div>
 
-            <div class="send-options">
-                <button type="button" class="btn btn-telegram" data-channel="telegram">
-                    <i class="fab fa-telegram-plane"></i> Отправить в Telegram
-                </button>
-                <button type="button" class="btn btn-whatsapp" data-channel="whatsapp">
-                    <i class="fab fa-whatsapp"></i> Отправить в WhatsApp
-                </button>
-            </div>
-        </form>
+                <div class="send-options">
+                    <button type="button" class="btn btn-telegram" data-channel="telegram">
+                        <i class="fab fa-telegram-plane"></i> Отправить в Telegram
+                    </button>
+                    <button type="button" class="btn btn-whatsapp" data-channel="whatsapp">
+                        <i class="fab fa-whatsapp"></i> Отправить в WhatsApp
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
-</div>
 
     <!-- Кнопка "Наверх" -->
     <button class="scroll-top">
@@ -459,14 +663,13 @@
     <script>
         // Инициализация счетчиков статистики
         document.addEventListener('DOMContentLoaded', function() {
-            // Анимация счетчиков
             const statNumbers = document.querySelectorAll('.stat-number');
             
             const animateCounters = () => {
                 statNumbers.forEach(stat => {
                     const target = parseInt(stat.getAttribute('data-count'));
-                    const duration = 2000; // 2 секунды
-                    const step = target / (duration / 16); // 60fps
+                    const duration = 2000;
+                    const step = target / (duration / 16);
                     let current = 0;
                     
                     const timer = setInterval(() => {
@@ -481,7 +684,6 @@
                 });
             };
             
-            // Запуск анимации при попадании в область видимости
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -498,7 +700,4 @@
         });
     </script>
 </body>
-
 </html>
-
-

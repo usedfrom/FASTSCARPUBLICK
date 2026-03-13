@@ -10,6 +10,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/pruf/favicon.png">
+     <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){
+            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=107536660', 'ym');
+        ym(107536660, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/107536660" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 </head>
 <body>
     <!-- Шапка сайта -->
@@ -84,12 +96,17 @@
         </div>
     </section>
 
-    <!-- Как мы работаем — фото человека на фоне, плашки лежат поверх фото -->
+    <!-- Как мы работаем — сразу под героем, одна надпись -->
     <section class="section process-section">
+        <div class="process-bg">
+            <div class="bg-left"></div>
+            <div class="bg-right"></div>
+        </div>
+
         <div class="container">
             <h2 class="section-title">Как мы работаем</h2>
             <p class="section-subtitle">4 простых шага до вашего нового автомобиля</p>
-            
+
             <div class="process-steps">
                 <div class="step">
                     <div class="step-number">1</div>
@@ -440,33 +457,33 @@
 
     <!-- Модальное окно заказа звонка -->
     <div class="modal" id="callback-modal">
-    <div class="modal-content">
-        <button class="modal-close">×</button>
-        <h2>Заказать обратный звонок</h2>
-        <p>Оставьте контакты — Сергей свяжется с вами в ближайшее время</p>
+        <div class="modal-content">
+            <button class="modal-close">×</button>
+            <h2>Заказать обратный звонок</h2>
+            <p>Оставьте контакты — Сергей свяжется с вами в ближайшее время</p>
 
-        <form id="callback-form">
-            <div class="form-group">
-                <input type="text" id="callback-name" placeholder="Ваше имя" required>
-            </div>
-            <div class="form-group">
-                <input type="tel" id="callback-phone" placeholder="Ваш телефон" required>
-            </div>
-            <div class="form-group">
-                <textarea id="callback-comment" placeholder="Что вас интересует? (необязательно)" rows="3"></textarea>
-            </div>
+            <form id="callback-form">
+                <div class="form-group">
+                    <input type="text" id="callback-name" placeholder="Ваше имя" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="callback-phone" placeholder="Ваш телефон" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="callback-comment" placeholder="Что вас интересует? (необязательно)" rows="3"></textarea>
+                </div>
 
-            <div class="send-options">
-                <button type="button" class="btn btn-telegram" data-channel="telegram">
-                    <i class="fab fa-telegram-plane"></i> Отправить в Telegram
-                </button>
-                <button type="button" class="btn btn-whatsapp" data-channel="whatsapp">
-                    <i class="fab fa-whatsapp"></i> Отправить в WhatsApp
-                </button>
-            </div>
-        </form>
+                <div class="send-options">
+                    <button type="button" class="btn btn-telegram" data-channel="telegram">
+                        <i class="fab fa-telegram-plane"></i> Отправить в Telegram
+                    </button>
+                    <button type="button" class="btn btn-whatsapp" data-channel="whatsapp">
+                        <i class="fab fa-whatsapp"></i> Отправить в WhatsApp
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
-</div>
 
     <!-- Модальное окно автомобиля -->
     <div class="modal modal-car" id="car-modal">
@@ -493,6 +510,4 @@
         });
     </script>
 </body>
-
 </html>
-

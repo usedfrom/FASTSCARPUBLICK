@@ -239,7 +239,10 @@ function loadLatestCars() {
     if (!container || typeof window.carsData === 'undefined') return;
 
     container.innerHTML = '';
-    window.carsData.slice(0, 4).forEach(car => {
+
+    // Перемешиваем массив случайно и берём 4 штуки
+    const shuffled = [...window.carsData].sort(() => Math.random() - 0.5);
+    shuffled.slice(0, 4).forEach(car => {
         container.appendChild(createCarCard(car));
     });
     addCarCardEventListeners();
@@ -357,7 +360,7 @@ function showCarDetailsModal(car) {
                 <h3>Описание</h3>
                 <p>${car.description || 'Отличное состояние, проверен перед покупкой.'}</p>
             </div>
-            <div class="car-modal-actions">
+           <div class="car-modal-actions" style="display:flex; flex-direction:column; gap:16px;">
                 <button class="btn btn-primary" id="modal-order-btn">Заказать этот автомобиль</button>
                 <button class="btn btn-secondary" onclick="closeModal('car-modal')">Закрыть</button>
             </div>
@@ -380,7 +383,7 @@ document.addEventListener('DOMContentLoaded', () => {
     style.textContent = `
         .car-image img.car-photo {
             width: 100%;
-            height: 180px;
+            height: 400px;
             object-fit: cover;
             border-radius: 8px 8px 0 0;
             display: block;
